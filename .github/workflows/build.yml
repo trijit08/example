@@ -12,7 +12,7 @@ jobs:
       with:
          node-version: 16
     - name: Install lint
-      run: npm init @eslint/config@latest
+      run:  npm init @eslint/config@latest -- --yes
     - name: Run lint
       run: npm run lint
     - name: Run Build
