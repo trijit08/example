@@ -5,7 +5,7 @@ on:
        branches:
          - feature
        path-ignore:
-          - 'src/**'
+          - 'src\**'
 jobs:
   deploy:
     runs-on: ubuntu-latest
