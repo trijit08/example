@@ -1,8 +1,11 @@
 name: Events Demo 1
 on: 
-   pull_request:
-       types: opened
    workflow_dispatch:
+   push:
+       branches:
+         - feature
+       path-ignore:
+          - 'src/**'
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -18,4 +21,4 @@ jobs:
       - name: Build code
         run: npm run build
       - name: Deploy project
-        run: echo "Deploying..."
+        run: echo "Deploying...."
