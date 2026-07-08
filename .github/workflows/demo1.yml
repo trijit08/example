@@ -4,8 +4,8 @@ on:
    push:
        branches:
          - feature
-       path-ignore:
-          - 'src\**'
+       paths-ignore:
+          - 'src/**'
 jobs:
   deploy:
     runs-on: ubuntu-latest
