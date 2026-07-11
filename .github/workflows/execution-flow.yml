@@ -83,4 +83,4 @@ jobs:
         steps:
           - name: Output information
             run: |
-              echo "${{ github }}"
+              echo "${{  steps.cache.output.cache-hit }}"
